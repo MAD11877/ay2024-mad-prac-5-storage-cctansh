@@ -2,7 +2,7 @@ package sg.edu.np.mad.madpractical5;
 
 import java.io.Serializable;
 
-public class User {
+public class User implements Serializable{
     private String name;
     public String getName() {
         return name;
@@ -31,6 +31,7 @@ public class User {
     public void setFollowed(boolean newFollowed) {
         this.followed = newFollowed;
     }
+    public User() {}
     public User(String name, String description, int id, boolean followed) {
         this.name = name;
         this.description = description;

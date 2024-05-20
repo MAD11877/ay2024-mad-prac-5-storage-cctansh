@@ -27,19 +27,19 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        dbHandler db = new dbHandler(this, null, null, 1);
+
         Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
-        String desc = intent.getStringExtra("desc");
-        final boolean[] follow = {intent.getBooleanExtra("follow", false)};
+        User user = (User) getIntent().getSerializableExtra("user");
 
         TextView tvName = findViewById(R.id.tvName);
         TextView tvDescription = findViewById(R.id.tvDescription);
         TextView btnFollow = findViewById(R.id.btnFollow);
         TextView btnMessage = findViewById(R.id.btnMessage);
 
-        tvName.setText(name);
-        tvDescription.setText(desc);
-        if (follow[0]) {
+        tvName.setText(user.getName());
+        tvDescription.setText(user.getDescription());
+        if (user.getFollowed()) {
             btnFollow.setText("Unfollow");
         } else {
             btnFollow.setText("Follow");
@@ -48,17 +48,18 @@ public class MainActivity extends AppCompatActivity {
         btnFollow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!follow[0]) {
+                if (!user.getFollowed()) {
                     btnFollow.setText("Unfollow");
-                    follow[0] = true;
+                    user.setFollowed(true);
                     Toast.makeText(MainActivity.this, "Followed", Toast.LENGTH_SHORT).show();
                     Log.i("btnFollow", "onClick: Followed");
                 } else {
                     btnFollow.setText("Follow");
-                    follow[0] = false;
+                    user.setFollowed(false);
                     Toast.makeText(MainActivity.this, "Unfollowed", Toast.LENGTH_SHORT).show();
                     Log.i("btnFollow", "onClick: Unfollowed");
                 }
+                db.updateUser(user);
             }
         });
         btnMessage.setOnClickListener(new View.OnClickListener() {

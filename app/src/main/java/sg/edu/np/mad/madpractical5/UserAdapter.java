@@ -36,6 +36,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+        User user = users.get(position);
         String tempName = users.get(position).getName();
         holder.name.setText(tempName);
         holder.desc.setText(users.get(position).getDescription());
@@ -55,9 +56,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
                 builder.setPositiveButton("View", new DialogInterface.OnClickListener(){
                     public void onClick(DialogInterface dialog, int id){
                         Intent intent = new Intent(activity, MainActivity.class);
-                        intent.putExtra("name", users.get(position).getName());
-                        intent.putExtra("desc", users.get(position).getDescription());
-                        intent.putExtra("follow", users.get(position).getFollowed());
+                        intent.putExtra("user", user);
                         activity.startActivity(intent);
                     }
                 });

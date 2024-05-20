@@ -30,16 +30,8 @@ public class ListActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        ArrayList<User> userList = new ArrayList<User>();
-
-        for (int i = 0; i < 20; i++) {
-            String name = "Name" + new Random().nextInt(1000000);
-            String desc = "Description" + new Random().nextInt(1000000);
-            boolean follow = new Random().nextBoolean();
-            User temp = new User(name,desc,i,follow);
-            userList.add(temp);
-        }
+        dbHandler db = new dbHandler(this, null, null, 1);
+        ArrayList<User> userList = db.getUsers();
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         UserAdapter mAdapter = new UserAdapter(userList, this);
@@ -48,40 +40,6 @@ public class ListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
-
-
-
-        /*
-        ImageView icon = findViewById(R.id.icon);
-
-        icon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(ListActivity.this);
-                builder.setTitle("Profile");
-                builder.setMessage("MADness");
-                builder.setCancelable(false);
-                builder.setPositiveButton("View", new DialogInterface.OnClickListener(){
-                    public void onClick(DialogInterface dialog, int id){
-                        int random = new Random().nextInt(1000000);
-                        Intent intent = new Intent(ListActivity.this, MainActivity.class);
-                        intent.putExtra("random", random);
-                        startActivity(intent);
-                    }
-                });
-                builder.setNegativeButton("Close", new DialogInterface.OnClickListener(){
-                    public void onClick(DialogInterface dialog, int id){
-                        dialog.cancel();
-                    }
-                });
-
-                // Create the Alert dialog
-                AlertDialog alertDialog = builder.create();
-                // Show the Alert Dialog box
-                alertDialog.show();
-            }
-        });
-        */
     }
 
 }
