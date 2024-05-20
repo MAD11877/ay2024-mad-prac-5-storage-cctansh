@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        dbHandler db = new dbHandler(this, null, null, 1);
+        DatabaseHandler db = new DatabaseHandler(this, null, null, 1);
 
         Intent intent = getIntent();
         User user = (User) getIntent().getSerializableExtra("user");

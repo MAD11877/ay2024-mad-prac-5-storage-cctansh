@@ -30,7 +30,7 @@ public class ListActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        dbHandler db = new dbHandler(this, null, null, 1);
+        DatabaseHandler db = new DatabaseHandler(this, null, null, 1);
         ArrayList<User> userList = db.getUsers();
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
