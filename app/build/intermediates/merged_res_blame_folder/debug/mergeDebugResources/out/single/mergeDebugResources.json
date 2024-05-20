@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/layout_fragment_group1.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/layout/fragment_group1.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/layout_custom_activity_list.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/layout/custom_activity_list.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/layout_activity_list.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/layout/activity_list.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/layout_activity_message_group.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/layout/activity_message_group.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/layout_fragment_group2.xml.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/layout/fragment_group2.xml"
+    },
+    {
+        "merged": "sg.edu.np.mad.madpractical5.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "sg.edu.np.mad.madpractical5.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    }
+]
